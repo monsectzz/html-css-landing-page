@@ -3,22 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Núcleo — Tutorías universitarias</title>
+<title>GrocerQuick POS</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header class="nav">
   <div class="nav__inner">
-    <a href="#top" class="nav__mark">Núcleo</a>
+    <a href="#top" class="nav__mark">GrocerQuick POS</a>
     <nav class="nav__links">
-      <a href="#materias">Materias</a>
-      <a href="#como-funciona">Cómo funciona</a>
-      <a href="#testimonios">Testimonios</a>
-      <a href="#contacto" class="nav__cta">Agendar sesión</a>
+      <a href="#conocenos">Conócenos</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#login" class="nav__login">Login</a>
     </nav>
   </div>
 </header>
@@ -28,117 +27,100 @@
   <section class="hero">
     <div class="hero__inner">
       <div class="hero__text">
-        <p class="hero__kicker">Tutorías entre estudiantes, por videollamada o presencial</p>
-        <h1 class="hero__title">Entiende la materia,<br>no solo el examen</h1>
-        <p class="hero__lead">Conectamos a estudiantes con tutores de semestres avanzados que ya pasaron la misma materia. Sesiones de una hora, al ritmo que necesitas.</p>
-        <div class="hero__actions">
-          <a href="#contacto" class="btn btn--primary">Agenda tu primera sesión</a>
-          <a href="#materias" class="btn btn--ghost">Ver materias</a>
-        </div>
+        <h1 class="hero__title">Gestión Eficiente para tu Supermercado</h1>
+        <p class="hero__lead">Simplifica tus operaciones diarias con GrocerQuick POS. Un sistema diseñado para la velocidad, claridad y eficiencia ergonómica en el punto de venta.</p>
+        <a href="#contacto" class="btn btn--primary">Comenzar Ahora <span aria-hidden="true">→</span></a>
       </div>
       <div class="hero__art" aria-hidden="true">
-        <svg viewBox="0 0 420 420" class="hero-svg">
-          <rect x="70" y="150" width="280" height="190" rx="4" fill="var(--paper)" stroke="var(--ink)" stroke-width="2"/>
-          <rect x="70" y="150" width="280" height="34" fill="var(--navy)"/>
-          <circle cx="92" cy="167" r="5" fill="var(--coral)"/>
-          <circle cx="112" cy="167" r="5" fill="var(--gold)"/>
-          <line x1="105" y1="220" x2="315" y2="220" stroke="var(--ink)" stroke-width="2" opacity="0.5"/>
-          <line x1="105" y1="245" x2="280" y2="245" stroke="var(--ink)" stroke-width="2" opacity="0.3"/>
-          <line x1="105" y1="270" x2="300" y2="270" stroke="var(--ink)" stroke-width="2" opacity="0.3"/>
-          <polyline points="105,320 150,290 190,305 230,260 270,280 315,235" fill="none" stroke="var(--coral)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-          <circle cx="315" cy="235" r="7" fill="var(--coral)"/>
-          <path d="M250 90 L270 130 L310 135 L280 162 L288 202 L250 182 L212 202 L220 162 L190 135 L230 130 Z" fill="var(--gold)" opacity="0.9"/>
+        <svg viewBox="0 0 480 340" class="hero-svg">
+          <rect x="0" y="0" width="480" height="340" rx="14" fill="#dce9e6"/>
+          <rect x="40" y="150" width="400" height="150" rx="6" fill="#ffffff" stroke="#182420" stroke-width="1.5" opacity="0.9"/>
+          <rect x="70" y="60" width="190" height="130" rx="8" fill="#182420"/>
+          <rect x="82" y="72" width="166" height="90" rx="3" fill="#ffffff"/>
+          <rect x="92" y="82" width="60" height="14" rx="2" fill="#1a6358"/>
+          <rect x="92" y="102" width="40" height="30" rx="3" fill="#dce9e6"/>
+          <rect x="138" y="102" width="40" height="30" rx="3" fill="#dce9e6"/>
+          <rect x="184" y="102" width="40" height="30" rx="3" fill="#dce9e6"/>
+          <rect x="92" y="138" width="132" height="18" rx="3" fill="#eef1f0"/>
+          <rect x="150" y="192" width="200" height="14" rx="3" fill="#eef1f0"/>
+          <rect x="150" y="214" width="150" height="14" rx="3" fill="#eef1f0"/>
+          <circle cx="380" cy="230" r="30" fill="#1a6358"/>
+          <rect x="365" y="215" width="30" height="30" rx="4" fill="#ffffff"/>
+          <rect x="300" y="70" width="20" height="70" rx="3" fill="#182420" opacity="0.85"/>
+          <rect x="292" y="60" width="36" height="14" rx="2" fill="#182420" opacity="0.85"/>
         </svg>
       </div>
     </div>
   </section>
 
-  <section id="como-funciona" class="steps">
-    <div class="steps__inner">
-      <h2>Cómo funciona</h2>
-      <ol class="steps__list">
-        <li class="step">
-          <span class="step__num">1</span>
-          <h3>Elige tu materia</h3>
-          <p>Desde Cálculo hasta Programación. Filtra por carrera, materia y disponibilidad.</p>
-        </li>
-        <li class="step">
-          <span class="step__num">2</span>
-          <h3>Agenda con un tutor</h3>
-          <p>Ves su perfil, su promedio en la materia y reseñas de otros estudiantes antes de reservar.</p>
-        </li>
-        <li class="step">
-          <span class="step__num">3</span>
-          <h3>Sube tu promedio</h3>
-          <p>Sesiones grabadas y material de apoyo que te quedas para repasar antes del examen.</p>
-        </li>
-      </ol>
-    </div>
-  </section>
+  <section class="services">
+    <div class="services__inner">
+      <h2 class="services__title">Nuestros Servicios</h2>
+      <div class="services__grid">
 
-  <section id="materias" class="subjects">
-    <div class="subjects__inner">
-      <h2 class="subjects__title">Materias con más demanda</h2>
-      <div class="subjects__grid">
-        <article class="subject">
-          <h3>Cálculo Diferencial</h3>
-          <p>Límites, derivadas y aplicaciones. Ideal antes de parciales.</p>
-          <span class="subject__price">$180 / hora</span>
+        <article class="service">
+          <div class="service__art" aria-hidden="true">
+            <svg viewBox="0 0 200 200" class="service-svg">
+              <rect width="200" height="200" fill="#f7f8f7"/>
+              <polygon points="60,70 100,50 140,70 140,120 100,140 60,120" fill="#dce9e6" stroke="#1a6358" stroke-width="2"/>
+              <line x1="60" y1="70" x2="100" y2="90" stroke="#1a6358" stroke-width="2"/>
+              <line x1="140" y1="70" x2="100" y2="90" stroke="#1a6358" stroke-width="2"/>
+              <line x1="100" y1="90" x2="100" y2="140" stroke="#1a6358" stroke-width="2"/>
+              <rect x="85" y="95" width="12" height="12" fill="#1a6358"/>
+            </svg>
+          </div>
+          <h3>Gestión de Inventario</h3>
         </article>
-        <article class="subject">
-          <h3>Programación I</h3>
-          <p>Lógica, estructuras de control y tu primer proyecto en Python.</p>
-          <span class="subject__price">$200 / hora</span>
-        </article>
-        <article class="subject">
-          <h3>Física General</h3>
-          <p>Cinemática, dinámica y problemas de examen resueltos paso a paso.</p>
-          <span class="subject__price">$180 / hora</span>
-        </article>
-        <article class="subject">
-          <h3>Estadística</h3>
-          <p>Probabilidad, distribuciones e interpretación de datos reales.</p>
-          <span class="subject__price">$190 / hora</span>
-        </article>
-      </div>
-    </div>
-  </section>
 
-  <section class="stats">
-    <div class="stats__inner">
-      <div class="stat">
-        <span class="stat__num">1,200+</span>
-        <span class="stat__label">sesiones dadas</span>
-      </div>
-      <div class="stat">
-        <span class="stat__num">38</span>
-        <span class="stat__label">materias cubiertas</span>
-      </div>
-      <div class="stat">
-        <span class="stat__num">4.8</span>
-        <span class="stat__label">calificación promedio</span>
-      </div>
-    </div>
-  </section>
+        <article class="service">
+          <div class="service__art" aria-hidden="true">
+            <svg viewBox="0 0 200 200" class="service-svg">
+              <rect width="200" height="200" fill="#f7f8f7"/>
+              <circle cx="70" cy="70" r="8" fill="#1a6358"/>
+              <circle cx="140" cy="60" r="8" fill="#1a6358"/>
+              <circle cx="100" cy="110" r="10" fill="#1a6358"/>
+              <circle cx="60" cy="140" r="7" fill="#1a6358"/>
+              <circle cx="150" cy="135" r="7" fill="#1a6358"/>
+              <line x1="70" y1="70" x2="100" y2="110" stroke="#1a6358" stroke-width="1.5" opacity="0.6"/>
+              <line x1="140" y1="60" x2="100" y2="110" stroke="#1a6358" stroke-width="1.5" opacity="0.6"/>
+              <line x1="100" y1="110" x2="60" y2="140" stroke="#1a6358" stroke-width="1.5" opacity="0.6"/>
+              <line x1="100" y1="110" x2="150" y2="135" stroke="#1a6358" stroke-width="1.5" opacity="0.6"/>
+              <line x1="70" y1="70" x2="140" y2="60" stroke="#1a6358" stroke-width="1.5" opacity="0.6"/>
+            </svg>
+          </div>
+          <h3>Gestión de Clientes</h3>
+        </article>
 
-  <section id="testimonios" class="quotes">
-    <div class="quotes__inner">
-      <blockquote>
-        <p>“Pasé de reprobar el primer parcial a sacar 9 en el final. Mi tutora me explicó igual que un compañero, no como un libro.”</p>
-        <cite>— Ana P., Ing. Industrial</cite>
-      </blockquote>
-      <blockquote>
-        <p>“Agendé una sesión el mismo día antes del examen y me salvó el semestre.”</p>
-        <cite>— Julián R., Sistemas Computacionales</cite>
-      </blockquote>
-    </div>
-  </section>
+        <article class="service">
+          <div class="service__art" aria-hidden="true">
+            <svg viewBox="0 0 200 200" class="service-svg">
+              <rect width="200" height="200" fill="#f7f8f7"/>
+              <circle cx="100" cy="70" r="18" fill="#dce9e6" stroke="#1a6358" stroke-width="2"/>
+              <path d="M65 145 C65 115 85 100 100 100 C115 100 135 115 135 145" fill="#dce9e6" stroke="#1a6358" stroke-width="2"/>
+              <circle cx="60" cy="90" r="11" fill="#ffffff" stroke="#1a6358" stroke-width="2"/>
+              <path d="M40 140 C40 120 50 110 60 110 C70 110 80 120 80 140" fill="#ffffff" stroke="#1a6358" stroke-width="2"/>
+              <circle cx="140" cy="90" r="11" fill="#ffffff" stroke="#1a6358" stroke-width="2"/>
+              <path d="M120 140 C120 120 130 110 140 110 C150 110 160 120 160 140" fill="#ffffff" stroke="#1a6358" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>Gestión de Empleados</h3>
+        </article>
 
-  <section id="contacto" class="cta">
-    <div class="cta__inner">
-      <h2>¿Listo para entender la materia?</h2>
-      <p>Tu primera sesión de 30 minutos es gratis. Sin tarjeta, sin compromiso.</p>
-      <a href="#" class="btn btn--primary">Agendar sesión gratuita</a>
+        <article class="service">
+          <div class="service__art" aria-hidden="true">
+            <svg viewBox="0 0 200 200" class="service-svg">
+              <rect width="200" height="200" fill="#f7f8f7"/>
+              <rect x="50" y="55" width="100" height="70" rx="4" fill="#ffffff" stroke="#1a6358" stroke-width="2"/>
+              <polyline points="60,105 80,85 95,95 115,70 140,80" fill="none" stroke="#1a6358" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="140" cy="80" r="4" fill="#1a6358"/>
+              <rect x="70" y="130" width="60" height="8" rx="2" fill="#dce9e6"/>
+              <rect x="85" y="145" width="30" height="6" rx="2" fill="#dce9e6"/>
+            </svg>
+          </div>
+          <h3>Gestión de Ventas</h3>
+        </article>
+
+      </div>
     </div>
   </section>
 

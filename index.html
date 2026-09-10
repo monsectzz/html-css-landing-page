@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Núcleo — Tutorías universitarias</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__mark">Núcleo</a>
+    <nav class="nav__links">
+      <a href="#materias">Materias</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#testimonios">Testimonios</a>
+      <a href="#contacto" class="nav__cta">Agendar sesión</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero__inner">
+      <div class="hero__text">
+        <p class="hero__kicker">Tutorías entre estudiantes, por videollamada o presencial</p>
+        <h1 class="hero__title">Entiende la materia,<br>no solo el examen</h1>
+        <p class="hero__lead">Conectamos a estudiantes con tutores de semestres avanzados que ya pasaron la misma materia. Sesiones de una hora, al ritmo que necesitas.</p>
+        <div class="hero__actions">
+          <a href="#contacto" class="btn btn--primary">Agenda tu primera sesión</a>
+          <a href="#materias" class="btn btn--ghost">Ver materias</a>
+        </div>
+      </div>
+      <div class="hero__art" aria-hidden="true">
+        <svg viewBox="0 0 420 420" class="hero-svg">
+          <rect x="70" y="150" width="280" height="190" rx="4" fill="var(--paper)" stroke="var(--ink)" stroke-width="2"/>
+          <rect x="70" y="150" width="280" height="34" fill="var(--navy)"/>
+          <circle cx="92" cy="167" r="5" fill="var(--coral)"/>
+          <circle cx="112" cy="167" r="5" fill="var(--gold)"/>
+          <line x1="105" y1="220" x2="315" y2="220" stroke="var(--ink)" stroke-width="2" opacity="0.5"/>
+          <line x1="105" y1="245" x2="280" y2="245" stroke="var(--ink)" stroke-width="2" opacity="0.3"/>
+          <line x1="105" y1="270" x2="300" y2="270" stroke="var(--ink)" stroke-width="2" opacity="0.3"/>
+          <polyline points="105,320 150,290 190,305 230,260 270,280 315,235" fill="none" stroke="var(--coral)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="315" cy="235" r="7" fill="var(--coral)"/>
+          <path d="M250 90 L270 130 L310 135 L280 162 L288 202 L250 182 L212 202 L220 162 L190 135 L230 130 Z" fill="var(--gold)" opacity="0.9"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section id="como-funciona" class="steps">
+    <div class="steps__inner">
+      <h2>Cómo funciona</h2>
+      <ol class="steps__list">
+        <li class="step">
+          <span class="step__num">1</span>
+          <h3>Elige tu materia</h3>
+          <p>Desde Cálculo hasta Programación. Filtra por carrera, materia y disponibilidad.</p>
+        </li>
+        <li class="step">
+          <span class="step__num">2</span>
+          <h3>Agenda con un tutor</h3>
+          <p>Ves su perfil, su promedio en la materia y reseñas de otros estudiantes antes de reservar.</p>
+        </li>
+        <li class="step">
+          <span class="step__num">3</span>
+          <h3>Sube tu promedio</h3>
+          <p>Sesiones grabadas y material de apoyo que te quedas para repasar antes del examen.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="materias" class="subjects">
+    <div class="subjects__inner">
+      <h2 class="subjects__title">Materias con más demanda</h2>
+      <div class="subjects__grid">
+        <article class="subject">
+          <h3>Cálculo Diferencial</h3>
+          <p>Límites, derivadas y aplicaciones. Ideal antes de parciales.</p>
+          <span class="subject__price">$180 / hora</span>
+        </article>
+        <article class="subject">
+          <h3>Programación I</h3>
+          <p>Lógica, estructuras de control y tu primer proyecto en Python.</p>
+          <span class="subject__price">$200 / hora</span>
+        </article>
+        <article class="subject">
+          <h3>Física General</h3>
+          <p>Cinemática, dinámica y problemas de examen resueltos paso a paso.</p>
+          <span class="subject__price">$180 / hora</span>
+        </article>
+        <article class="subject">
+          <h3>Estadística</h3>
+          <p>Probabilidad, distribuciones e interpretación de datos reales.</p>
+          <span class="subject__price">$190 / hora</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="stats__inner">
+      <div class="stat">
+        <span class="stat__num">1,200+</span>
+        <span class="stat__label">sesiones dadas</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num">38</span>
+        <span class="stat__label">materias cubiertas</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num">4.8</span>
+        <span class="stat__label">calificación promedio</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonios" class="quotes">
+    <div class="quotes__inner">
+      <blockquote>
+        <p>“Pasé de reprobar el primer parcial a sacar 9 en el final. Mi tutora me explicó igual que un compañero, no como un libro.”</p>
+        <cite>— Ana P., Ing. Industrial</cite>
+      </blockquote>
+      <blockquote>
+        <p>“Agendé una sesión el mismo día antes del examen y me salvó el semestre.”</p>
+        <cite>— Julián R., Sistemas Computacionales</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <section id="contacto" class="cta">
+    <div class="cta__inner">
+      <h2>¿Listo para entender la materia?</h2>
+      <p>Tu primera sesión de 30 minutos es gratis. Sin tarjeta, sin compromiso.</p>
+      <a href="#" class="btn btn--primary">Agendar sesión gratuita</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <span>Núcleo — Tutorías universitarias</span>
+    <span>© 2026 Todos los derechos reservados</span>
+  </div>
+</footer>
+
+</body>
+</html>
